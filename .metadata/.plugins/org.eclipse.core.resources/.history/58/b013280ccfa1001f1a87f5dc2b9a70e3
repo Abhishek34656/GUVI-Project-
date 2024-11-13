@@ -1,0 +1,29 @@
+package com.user.dao;
+
+import com.user.model.User;
+import com.user.database.databaseconnection; // Corrected the class name
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserDao {
+    
+	// Method to add a new user to the database
+    public boolean addUser(User user) {
+        String query = "INSERT INTO Users (name, email, password, role) VALUES (?, ?, ?, ?)";
+        try (Connection conn = databaseconnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setString(1, user.getName());
+            stmt.setString(2, user.getEmail());
+            stmt.setString(3, user.getPassword());
+            stmt.setString(4, user.getRole());
+            return stmt.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    
+}
