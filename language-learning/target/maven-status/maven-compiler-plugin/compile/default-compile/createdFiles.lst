@@ -1,0 +1,3 @@
+com\user\database\databaseconnection.class
+com\user\dao\UserDao.class
+com\user\model\User.class
