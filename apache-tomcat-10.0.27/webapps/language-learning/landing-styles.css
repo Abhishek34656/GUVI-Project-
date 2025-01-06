@@ -1,0 +1,97 @@
+/* Hero Section */
+/* .hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1584697964154-6c0f8c2a0c4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGxhbmd1YWdlJTIwaW1hZ2V8ZW58MHx8fHwxNjE3NzMzMTQz&ixlib=rb-1.2.1&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+} */
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.platform-name {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.glow-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00ff9d, #00ffcc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0, 255, 157, 0.7), 0 0 10px rgba(0, 255, 157, 0.5), 0 0 15px rgba(0, 255, 157, 0.3); /* Glowing effect */
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgba(0, 255, 157, 0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(0, 255, 157, 1);
+    }
+}
+
+/* Modal Styles */
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+form .form-control {
+    border-radius: 0.5rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/937/590/large_2x/online-education-application-learning-worldwide-on-computer-mobile-website-background-social-distance-concept-the-classroom-training-course-library-illustration-flat-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensure text is visible against the background */
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.5); /* Glowing effect */
+}
+
+footer a {
+    color: #00ffcc; /* Light color for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    text-shadow: 0 0 5px rgba(0, 255, 157, 0.7); /* Glowing effect on links */
+}
+
+footer a:hover {
+    color: #ffffff; /* Change color on hover */
+    text-shadow: 0 0 10px rgba(0, 255, 157, 1); /* Stronger glow on hover */
+}
+
+

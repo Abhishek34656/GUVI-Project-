@@ -1,0 +1,30 @@
+// dashboard-script.js
+
+// Function to navigate to different sections
+function navigateTo(section) {
+    try {
+        // Logic to navigate to the specified section
+        console.log(`Navigating to ${section}`);
+        // Add your navigation logic here
+    } catch (error) {
+        console.error("Navigation error:", error);
+        alert("An error occurred while navigating. Please try again.");
+    }
+}
+
+// Function to validate input
+function validateInput(input) {
+    if (!input || input.trim() === "") {
+        alert("Input cannot be empty.");
+        return false;
+    }
+    return true;
+}
+
+// Example of using the validation function
+document.getElementById("submitButton").addEventListener("click", function() {
+    const userInput = document.getElementById("inputField").value;
+    if (validateInput(userInput)) {
+        // Proceed with form submission or other logic
+    }
+});

@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #e0e7ff); /* Beautiful gradient background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    padding: 1.5rem;
+    background-color: #f8f9fa; /* Light background color for the sidebar */
+    border-right: 1px solid #e0e0e0; /* Optional: border for separation */
+}
+
+.sidebar .list-group-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white; /* Text color */
+}
+
+/* Button Colors */
+.sidebar .list-group-item:nth-child(1) {
+    background-color: #1cb0f6; /* Profile */
+}
+
+.sidebar .list-group-item:nth-child(2) {
+    background-color: #06f863b4; /* Leaderboard */
+}
+
+.sidebar .list-group-item:nth-child(3) {
+    background-color: #f8d30388; /* Target */
+}
+
+.sidebar .list-group-item:nth-child(4) {
+    background-color: #aa25b6; /* Shop */
+}
+
+.sidebar .list-group-item:nth-child(5) {
+    background-color: #c54331; /* More */
+}
+
+.sidebar .list-group-item:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
+
+.sidebar .list-group-item i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Learning Path Styles */
+.learning-path {
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Achievements and Friends Section Styles */
+.achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.achievement-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 1rem;
+    }
+}
